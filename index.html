@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espacio de divulgación | Recurso educativo digital</title>
+  <style>
+    :root{
+      --navy:#0d2f4f;
+      --navy-2:#15476f;
+      --gold:#f4c542;
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --text:#213547;
+      --muted:#5e6b78;
+      --line:#d7e1ea;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit}
+    .hero{min-height:88vh;background:linear-gradient(135deg, rgba(13,47,79,.92), rgba(21,71,111,.88)), url('assets/cover.png') center/cover no-repeat;color:#fff;display:flex;align-items:center}
+    .wrap{width:min(1120px, 92%);margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+    .brand{font-weight:700;color:var(--navy)}
+    .nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--navy)}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:34px;align-items:center;padding:72px 0}
+    h1{font-size:48px;line-height:1.1;margin:0 0 18px}
+    h2{font-size:30px;color:var(--navy);margin:0 0 12px}
+    h3{font-size:20px;color:var(--navy);margin:0 0 10px}
+    .lead{font-size:20px;color:#eff5fa;max-width:760px}
+    .pill{display:inline-block;padding:8px 14px;border:1px solid rgba(255,255,255,.28);border-radius:999px;margin-bottom:18px;font-size:13px;letter-spacing:.3px;background:rgba(255,255,255,.1)}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+    .btn{padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;display:inline-block}
+    .btn-primary{background:var(--gold);color:#1f2933}
+    .btn-secondary{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);color:#fff}
+    .stats{display:grid;gap:14px}
+    .stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:20px 22px}
+    .stat b{display:block;font-size:18px;margin-bottom:6px}
+    section{padding:68px 0}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 28px rgba(18,48,79,.06)}
+    .soft{background:linear-gradient(180deg, #fff, #f9fbfd)}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#edf4fa;color:var(--navy);font-size:12px;font-weight:700;margin-bottom:10px}
+    ul.clean{padding-left:18px;margin:10px 0 0}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .shot{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(18,48,79,.05)}
+    .shot img{width:100%;display:block;background:#eef3f7}
+    .shot .cap{padding:12px 14px;font-size:14px;color:var(--muted)}
+    .footer{background:var(--navy);color:#dce6ee;padding:34px 0 44px;margin-top:16px}
+    .mini{font-size:14px;color:var(--muted)}
+    .accent{color:var(--gold)}
+    .notice{border-left:5px solid var(--gold);padding:14px 16px;background:#fff8df;border-radius:0 12px 12px 0;color:#5b4a00}
+    .repo{font-family:Consolas,monospace;background:#eef4f8;padding:12px 14px;border-radius:10px;border:1px dashed #b8c9d8;word-break:break-all}
+    @media (max-width: 900px){
+      .hero-grid,.grid-2,.grid-3,.gallery{grid-template-columns:1fr}
+      h1{font-size:38px}
+      .lead{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="brand">AA4-EV01 · Espacio de divulgación</div>
+      <div class="nav">
+        <a href="#problematica">Problemática</a>
+        <a href="#recurso">Recurso</a>
+        <a href="#aprendizajes">Aprendizajes</a>
+        <a href="#estrategia">Estrategia</a>
+        <a href="#licencia">Licencia</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pill">Sitio web de socialización del proyecto pedagógico</div>
+        <h1>Curación de contenidos digitales para el uso pedagógico de información confiable</h1>
+        <p class="lead">Este espacio presenta el recurso educativo digital elaborado para fortalecer en los aprendices la búsqueda, selección, verificación, organización y uso responsable de contenidos digitales en contextos de formación.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#recurso">Ver recurso y evidencias</a>
+          <a class="btn btn-secondary" href="#estrategia">Revisar estrategia de divulgación</a>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>Problemática atendida</b>Dificultades para buscar, filtrar y categorizar información digital confiable en el aula.</div>
+        <div class="stat"><b>Solución desarrollada</b>Recurso educativo digital en formato visual con criterios de curación, netiqueta y uso responsable de fuentes.</div>
+        <div class="stat"><b>Población de interés</b>Aprendices, instructores y comunidad educativa interesada en mediaciones tecnológicas.</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="problematica">
+    <div class="wrap grid-2">
+      <div class="card soft">
+        <div class="tag">Contexto</div>
+        <h2>Problemática identificada</h2>
+        <p>En la práctica pedagógica se evidencian dificultades en algunos aprendices para localizar información pertinente, verificar la confiabilidad de las fuentes, organizar hallazgos y utilizar mediaciones tecnológicas con intención formativa. Esta situación afecta la calidad del aprendizaje, la autonomía digital y la toma de decisiones frente al uso de recursos en línea.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Respuesta pedagógica</div>
+        <h2>Objetivo del proyecto</h2>
+        <p>Diseñar y socializar un recurso educativo digital que oriente a los aprendices en la curación de contenidos digitales, promoviendo habilidades para seleccionar, clasificar y usar información confiable con criterios éticos, comunicativos y académicos.</p>
+        <ul class="clean">
+          <li>Fortalecer el pensamiento crítico frente a la información digital.</li>
+          <li>Favorecer el uso pedagógico de herramientas tecnológicas.</li>
+          <li>Promover netiqueta, derechos de autor y buenas prácticas de publicación.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="recurso">
+    <div class="wrap">
+      <div class="card" style="margin-bottom:22px">
+        <div class="tag">Recurso educativo digital final</div>
+        <h2>Contenido socializado en este sitio</h2>
+        <p>El recurso final fue diseñado como una presentación educativa de apoyo para el aula. Integra texto, imágenes y estructura visual clara, con intencionalidad pedagógica orientada a resolver la problemática detectada. Presenta una ruta didáctica para buscar, verificar y organizar contenidos digitales de manera segura y pertinente.</p>
+        <div class="notice"><b>Resultado esperado:</b> que el aprendiz identifique criterios de calidad de la información, reconozca fuentes confiables y use contenidos digitales de forma ética, organizada y útil para su proceso formativo.</div>
+      </div>
+      <div class="gallery">
+        <figure class="shot"><img src="assets/recurso_1.png" alt="Portada del recurso educativo digital"><figcaption class="cap">Vista 1. Presentación del recurso educativo digital.</figcaption></figure>
+        <figure class="shot"><img src="assets/recurso_2.png" alt="Contenido del recurso educativo digital"><figcaption class="cap">Vista 2. Desarrollo de criterios para curación de contenidos.</figcaption></figure>
+        <figure class="shot"><img src="assets/recurso_3.png" alt="Sección metodológica del recurso"><figcaption class="cap">Vista 3. Ruta metodológica y recomendaciones de uso.</figcaption></figure>
+        <figure class="shot"><img src="assets/recurso_4.png" alt="Cierre del recurso educativo"><figcaption class="cap">Vista 4. Cierre, orientaciones y aplicación pedagógica.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="aprendizajes">
+    <div class="wrap grid-3">
+      <div class="card">
+        <div class="tag">Aprendizaje 1</div>
+        <h3>Selección de información</h3>
+        <p>Se consolidaron criterios para distinguir información confiable, pertinente y actualizada frente a contenidos poco rigurosos o carentes de respaldo.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Aprendizaje 2</div>
+        <h3>Uso pedagógico de TIC</h3>
+        <p>El recurso integra mediaciones tecnológicas como apoyo a la enseñanza, con enfoque claro, visual y útil para ambientes de aprendizaje presenciales o virtuales.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Aprendizaje 3</div>
+        <h3>Comunicación digital responsable</h3>
+        <p>Se promueve netiqueta, respeto por la autoría, citación de fuentes y distribución ética del contenido digital elaborado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="estrategia">
+    <div class="wrap grid-2">
+      <div class="card soft">
+        <div class="tag">Plataforma sugerida</div>
+        <h2>Repositorio o sitio para publicación</h2>
+        <p>Este sitio fue estructurado para publicarse fácilmente en una plataforma gratuita como <b>GitHub Pages</b>, ya que permite alojar páginas HTML de forma ordenada y compartir un enlace de acceso directo al proyecto.</p>
+        <p class="mini">También puede adaptarse a Google Sites, Wix o Webnode si se prefiere una edición visual sin código.</p>
+        <div class="repo">Archivo principal para publicar: index.html</div>
+      </div>
+      <div class="card">
+        <div class="tag">Estrategia de divulgación</div>
+        <h2>Cómo compartir el recurso</h2>
+        <ul class="clean">
+          <li>Socializar el enlace en el ambiente virtual de aprendizaje o LMS institucional.</li>
+          <li>Compartirlo en grupos de clase, correo institucional o foros académicos.</li>
+          <li>Usarlo como material base para inducción, trabajo autónomo y refuerzo temático.</li>
+          <li>Dirigirlo a aprendices, instructores y otros actores interesados en formación mediada por TIC.</li>
+          <li>Actualizar el sitio con nuevos recursos derivados, guías, infografías o enlaces de consulta.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="licencia">
+    <div class="wrap grid-2">
+      <div class="card">
+        <div class="tag">Derechos de autor</div>
+        <h2>Uso responsable del contenido</h2>
+        <p>El recurso se presenta con fines educativos. Debe conservarse el reconocimiento de autoría de los materiales producidos y verificarse el uso permitido de imágenes, textos o recursos complementarios antes de su redistribución.</p>
+      </div>
+      <div class="card soft">
+        <div class="tag">Licenciamiento</div>
+        <h2>Recomendación de publicación</h2>
+        <p>Se sugiere publicar el recurso indicando una licencia de uso educativo no comercial y citando las fuentes empleadas, para favorecer la circulación académica responsable y el respeto por la propiedad intelectual.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <h3 style="color:white;margin-top:0">Síntesis del espacio de divulgación</h3>
+      <p>Este sitio socializa el recurso educativo digital final, explica los aprendizajes alcanzados y muestra la forma en que la propuesta responde a la problemática de aula identificada. <span class="accent">Corresponde a la evidencia AA4-EV01 - Yina Paola Trujillo Matiz -.</span></p>
+    </div>
+  </footer>
+</body>
+</html>
